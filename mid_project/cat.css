@@ -1,0 +1,210 @@
+
+
+/* Reset */
+body, h1, h2, h3, p, ul, li {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: Arial, sans-serif;
+background: url("images1/bats.gif") repeat;
+}
+/* Container */
+.container {
+width: 850px;
+margin: 0 auto;
+background: #fff;
+/* Soft shadow on all four sides */
+box-shadow: 0px 5px 10px 15px rgb(0, 0, 0);
+}
+/* Header */
+header {
+display: flex;
+align-items: center;
+background: linear-gradient(to right, #f0ecec, #ffa500, #000000);
+border-top: 2px solid black;
+color: black;
+padding: 15px;
+}
+header .logo {
+width: 65px;
+height: 65px;
+margin-right: 10px;
+}
+header h1 {
+font-size: 40px;
+}
+header p {
+font-size: 18px;
+margin-top: 5px;
+font-weight: bold;
+}
+/* Top navigation */
+.top-nav ul {
+list-style: none;
+display: flex;
+background: #000;
+}
+.top-nav li {
+flex: 1;
+text-align: center;
+}
+.top-nav a {
+display: block;
+padding: 12px;
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+.top-nav li:hover {
+background: gray;
+}
+.top-nav .active a {
+background: black;
+color:white;
+}
+/* Main layout */
+main {
+display: flex;
+padding-right: 0;
+align-items: flex-start;
+}
+.dropdown{
+position: relative;
+}
+ul.submenu {
+display: none;
+position: absolute;
+top: 100%;
+left: 0;
+background: black;
+list-style: none;
+margin: 0;
+padding: 0;
+width: 170px;
+z-index:10 ;
+box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+}
+.submenu li{
+width: 100%;
+}
+.dropdown:hover .submenu {
+display: block;
+}
+.submenu li a {
+display: block;
+padding: 10px;
+color: white;
+text-decoration: none;
+text-align: center;
+}
+.submenu li a:hover {
+background: gray;
+}
+/* Sidebar */
+.side-menu {
+width: 130px;
+margin-right: 20px;
+margin-top: 35px;
+margin-left: 20px;
+}
+.side-menu ul {
+list-style: none;
+padding: 5px;
+}
+.side-menu a {
+display: block;
+padding: 10px;
+padding-bottom: 5px;
+margin-bottom: 4px;
+background: orange;
+color: black;
+font-size: larger;
+font-weight: bolder;
+text-align: left;
+text-decoration: none;
+border: 3px solid black;
+}
+.side-menu a:hover {
+color: green;
+}
+.product{
+flex:1;
+margin-top: 30px;
+}
+/* Product */
+.product h2 {
+margin-top: 0px;
+padding-left: 20px;
+}
+.product-info{
+display:flex;
+align-items:flex-start;
+gap:20px;
+margin-left:10px;
+margin-top:20px;
+}
+.product-info img {
+width: 200px;
+height: 170px;
+position: center;
+margin-top: 20px;
+margin-right: 30px;
+}
+.product-info div {
+display: flex;
+flex-direction: column;
+}
+.product-info div p:first-child {
+margin-bottom: 15px; /* adds space between description and price */
+}
+/* Related items */
+.related {
+width:200px;
+padding-left: 15px;
+background-color: #f4dcae;
+margin-left: 40px;
+padding-bottom: 20px;
+}
+.related-item {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+margin-left: 15px;
+margin: bottom 10px;
+text-align: center;
+}
+.related-item img {
+width: 30%;
+display: block;
+margin-bottom: 10px;
+}
+.related h3{
+font-size: medium;
+margin-bottom: 10px;
+margin-top: 20px;
+}
+.related-item a {
+text-decoration: none;
+color:black;
+font-weight:550;
+margin-bottom: 10px;
+text-decoration: underline;
+}
+.related-item a:hover{
+color:green;
+}
+.price-value {
+color: #000;
+font-weight:550;
+}
+/* Footer */
+footer {
+border-top:2px solid black;
+background: linear-gradient(to right, black, orange,white);
+color: black;
+text-align: center;
+padding: 10px;
+margin-top: 0px;
+}
